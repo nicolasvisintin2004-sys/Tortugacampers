@@ -76,4 +76,4 @@ La primera vez pregunta si crear un sitio nuevo: elegí *Create & configure a ne
 
 - Probá el configurador hasta el final y mandá un WhatsApp de prueba: tiene que llegarle a Martín (`site.whatsapp`).
 - Revisá la vista previa del link pegándolo en WhatsApp: debe mostrar la foto Open Graph.
-- Es una demo: va con `noindex` en metadata (`app/layout.tsx`), `app/robots.ts` y la cabecera `X-Robots-Tag` del `netlify.toml`. Para publicar el sitio real hay que quitar las tres cosas.
+- Es una demo: va con `noindex` en metadata (`app/layout.tsx`), `app/robots.ts` y la cabecera `X-Robots-Tag` de `next.config.ts`. Para publicar el sitio real hay que quitar las tres cosas.

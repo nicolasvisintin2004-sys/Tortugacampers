@@ -8,16 +8,7 @@
   NODE_VERSION = "22"
   NEXT_TELEMETRY_DISABLED = "1"
 
-# Demo: reforzamos el noindex también por cabecera.
-# Al publicar el sitio real, borrar X-Robots-Tag (y ver README).
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
-    X-Content-Type-Options = "nosniff"
-    X-Frame-Options = "SAMEORIGIN"
-    Referrer-Policy = "strict-origin-when-cross-origin"
-    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+# Las cabeceras de seguridad y el noindex están en next.config.ts.
 
 # Video y fotos sin hash en el nombre: una semana de caché.
 [[headers]]
